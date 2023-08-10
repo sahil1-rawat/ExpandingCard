@@ -12,7 +12,7 @@ const Cards = (props) => {
     <div className='container'>
         {
             props.Temples.map((Temples,index)=>(
-                <MyTemples key={Temples.id} id={Temples.id} image={Temples.image} name={Temples.name} extra={Temples.extra} onExpandCard={()=>expandCard(index)} myClass={`card ${activeDiv===index?'active':''}`} />
+                <MyTemples key={Temples.id}  image={Temples.image} name={Temples.name} extra={Temples.extra} onExpandCard={()=>expandCard(index)} myClass={`card ${activeDiv===index?'active':''}`} />
             ))
         }
     </div>
